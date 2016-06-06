@@ -1,0 +1,39 @@
+# Site settings
+title: Petro Matviichuk
+description: 'If you want to go fast, go alone. If you want to go far, go together'
+url: 'https://www.matviichuk.com'
+baseurl: /
+google_analytics: 'UA-76629845-3'
+disqus_shortname: 'matviichuk'
+
+author:
+  name: 'Petro Matviichuk'
+  email: petro@matviichuk.com
+  twitter_username: petromatviichuk
+  facebook_username: petro.matviichuk
+  github_username:  pmatv
+  linkedin_username:  pmatv
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 5
+permalink: /:year/:month/:day/:title
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
