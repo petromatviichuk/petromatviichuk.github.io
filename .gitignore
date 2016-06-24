@@ -1,6 +1,7 @@
-_site
-.sass-cache
 .jekyll-metadata
-*.sublime-project
-*.sublime-workspace
+.htaccess
 .DS_Store
+.sass-cache
+Gemfile.lock
+_site/
+_drafts/
