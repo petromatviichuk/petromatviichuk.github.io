@@ -22,16 +22,16 @@ Verifying - Enter Export Password: mystrongexportpass
 
 where:
 
-* **-name** - unique alias for future keystore
-* **-in** - path and file name of PEM certificate
-* **-inkey** - path and name of private key
-* **-out** - path where PKCS#12 container must be saved
+* **-name** is a unique alias for future keystore
+* **-in** is a path and a file name of PEM certificate
+* **-inkey** is a path and a name of the private key
+* **-out** is a path where PKCS#12 container must be saved
 
 It's mandatory to set **Export Password** as it will be used later.
 
 After successfull result of openssl command, new container **ca.p12** can be imported to Java keystore.
 
-For creating Java keystore, we have to use keytool program. This tool included in the bin directory of the Java SDK.
+For creating Java keystore, we have to use keytool program. This tool is included in the bin directory of the Java SDK.
 
 {% highlight shell %}
 pmatv@work-pro:~$ keytool -importkeystore -destkeystore ca.jks -srckeystore ca.p12 -srcstoretype pkcs12 -alias myalias
@@ -41,9 +41,9 @@ Enter source keystore password: mystrongexportpass
 {% endhighlight %}
 where:
 
-* **-destkeystore** - path and name of future keystore
-* **-srckeystore** - path and name of our PKCS#12 container
-* **-alias** - should be same unique name that we've used for openssl command
+* **-destkeystore** is a path and a name of future keystore
+* **-srckeystore** is a path and a name of our PKCS#12 container
+* **-alias** should be same unique name that we've used for openssl command
 
 So at the end you should have file **ca.jks** which is Java keystore.
 
@@ -53,7 +53,7 @@ Also remember about two passwords:
 * **mystrongexportpass** - keystore password (**keystorePass** SSL connector attribute in tomcat configuration)
 
 
-If you'd like to check content of keystore, you can see following command:
+If you'd like to check content of keystore, you can run following command:
 
 {% highlight shell %}
 pmatv@work-pro:~$ keytool -list -keystore ca.jks -rfc

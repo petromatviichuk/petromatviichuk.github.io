@@ -12,7 +12,7 @@ author: pmatv
 ---
 
 
-Recently I experienced problem in logstash with handling nested json data. The document was separated by sub-documents and looked like:
+Recently I experienced a problem in logstash with handling nested json data. The document was separated by sub-documents and looked like:
 
 {% highlight json %}
 {
@@ -32,7 +32,7 @@ Recently I experienced problem in logstash with handling nested json data. The d
 
 After spending some time, I resolved my problem and noticed few useful cases.
 
-Let's take simple logstash configuration for demonstrating them.
+Let's take simple logstash configuration to demonstrate them.
 
 ### Case 1: Process field value in logstash
 
@@ -77,15 +77,15 @@ Pipeline main has been shutdown
 stopping pipeline {:id=>"main"}
 {% endhighlight %}
 
-As result, **user-request-id** now has "57" as new value.
+As result, **user-request-id** has now "57" as new value.
 
 ### Case 2: Process field in logstash
 
-Let's take previous example and try to add location information about client IP addresses. In our case it's **"clientIp"** field.
+Let's take previous example and try to add location information about client IP address. In our case it's **"clientIp"** field.
 
 To handle our nested field, the full path to that field should be specified: **"[request][clientIp]"**.
 
-Let's slightly modify configuration and see results:
+Let's slightly modify configuration and see the results:
 
 {% highlight shell %}
 $ cat json-test.conf
