@@ -38,14 +38,14 @@ configure: error: IBM DB2 library not found
 --with-oracle
 configure: error: Oracle OCI library not found
 {% endhighlight %}
-**Resolution:** Download and install [Oracle Instant Client](http://www.oracle.com/technetwork/database/features/instant-client)
+**Solution:** Download and install [Oracle Instant Client](http://www.oracle.com/technetwork/database/features/instant-client)
 <div class="breaker"></div>
 
 {% highlight raw %}
 --with-mysql
 configure: error: MySQL library not found
 {% endhighlight %}
-**Resolution:** sudo apt-get install **libmysqld-dev** / sudo yum install **mysql-devel**
+**Solution:** sudo apt-get install **libmysqld-dev** / sudo yum install **mysql-devel**
 
 **Note:** in CentOS 7 mysql replaced with MariaDB so mariadb-devel will be installed
 <div class="breaker"></div>
@@ -54,42 +54,42 @@ configure: error: MySQL library not found
 --with-postgresql
 configure: error: PostgreSQL library not found
 {% endhighlight %}
-**Resolution:** sudo apt-get install **libpq-dev** / sudo yum install **postgresql-devel**
+**Solution:** sudo apt-get install **libpq-dev** / sudo yum install **postgresql-devel**
 <div class="breaker"></div>
 
 {% highlight raw %}
 --with-sqlite3
 configure: error: SQLite3 library not found
 {% endhighlight %}
-**Resolution:** sudo apt-get install **libsqlite3-dev** / sudo yum install **sqlite-devel**
+**Solution:** sudo apt-get install **libsqlite3-dev** / sudo yum install **sqlite-devel**
 <div class="breaker"></div>
 
 {% highlight raw %}
 --with-jabber
 configure: error: Jabber library not found
 {% endhighlight %}
-**Resolution:** sudo apt-get install **libiksemel-dev** then try **--with-jabber=/usr** / for CentOS install RPM's from [zabbix repos](https://repo.zabbix.com/non-supported/rhel/7/x86_64/)
+**Solution:** sudo apt-get install **libiksemel-dev** then try **--with-jabber=/usr** / for CentOS install RPM's from [zabbix repos](https://repo.zabbix.com/non-supported/rhel/7/x86_64/)
 <div class="breaker"></div>
 
 {% highlight raw %}
 --with-libxml2
 configure: error: LIBXML2 library not found
 {% endhighlight %}
-**Resolution:** sudo apt-get install **libxml2-dev** / sudo yum install **libxml2-devel**
+**Solution:** sudo apt-get install **libxml2-dev** / sudo yum install **libxml2-devel**
 <div class="breaker"></div>
 
 {% highlight raw %}
 --with-unixodbc
 configure: error: unixODBC library not found
 {% endhighlight %}
-**Resolution:** sudo apt-get install **unixodbc-dev** / sudo yum install **unixODBC-devel**
+**Solution:** sudo apt-get install **unixodbc-dev** / sudo yum install **unixODBC-devel**
 <div class="breaker"></div>
 
 {% highlight raw %}
 --with-net-snmp
 configure: error: Invalid Net-SNMP directory - unable to find net-snmp-config
 {% endhighlight %}
-**Resolution:** sudo apt-get install **libsnmp-dev snmp** / sudo yum install **net-snmp-devel net-snmp**
+**Solution:** sudo apt-get install **libsnmp-dev snmp** / sudo yum install **net-snmp-devel net-snmp**
 
 **Note:** I'd recommend install snmp/net-snmp also with devel packages just to avoid error of loading MIBs during Zabbix Server/Proxy first start.
 <div class="breaker"></div>
@@ -98,35 +98,35 @@ configure: error: Invalid Net-SNMP directory - unable to find net-snmp-config
 --with-ssh2
 configure: error: SSH2 library not found
 {% endhighlight %}
-**Resolution:** sudo apt-get install **libssh2-1-dev** / sudo yum install **libssh2-devel**
+**Solution:** sudo apt-get install **libssh2-1-dev** / sudo yum install **libssh2-devel**
 <div class="breaker"></div>
 
 {% highlight raw %}
 --with-openipmi
 configure: error: Invalid OPENIPMI directory - unable to find ipmiif.h
 {% endhighlight %}
-**Resolution:** sudo apt-get install **libopenipmi-dev** / sudo yum install **OpenIPMI-devel**
+**Solution:** sudo apt-get install **libopenipmi-dev** / sudo yum install **OpenIPMI-devel**
 <div class="breaker"></div>
 
 {% highlight raw %}
 --with-ldap
 configure: error: Invalid LDAP directory - unable to find ldap.h
 {% endhighlight %}
-**Resolution:** sudo apt-get install **libldap2-dev** / sudo yum install **openldap-devel**
+**Solution:** sudo apt-get install **libldap2-dev** / sudo yum install **openldap-devel**
 <div class="breaker"></div>
 
 {% highlight raw %}
 --with-libcurl
 configure: error: Curl library not found
 {% endhighlight %}
-**Resolution:** sudo apt-get install **libcurl4-openssl-dev** / sudo yum install **libcurl-devel**
+**Solution:** sudo apt-get install **libcurl4-openssl-dev** / sudo yum install **libcurl-devel**
 <div class="breaker"></div>
 
 {% highlight raw %}
 --with-mbedtls
 configure: error: mbed TLS (PolarSSL) library libpolarssl not found
 {% endhighlight %}
-**Resolution:** Best options is to install mbed TLS from [sources](https://tls.mbed.org/download-archive)
+**Solution:** Best options is to install mbed TLS from [sources](https://tls.mbed.org/download-archive)
 
 **Note:** Currently Zabbix supports 1.3.X version only. See more [here](https://www.zabbix.com/documentation/3.0/manual/encryption#compiling_zabbix_with_encryption_support).
 <div class="breaker"></div>
@@ -135,6 +135,6 @@ configure: error: mbed TLS (PolarSSL) library libpolarssl not found
 --with-gnutls
 configure: error: GnuTLS library libgnutls not found
 {% endhighlight %}
-**Resolution:** sudo apt-get install **libgnutls-dev** / sudo yum install **gnutls-devel**
+**Solution:** sudo apt-get install **libgnutls-dev** / sudo yum install **gnutls-devel**
 
 
