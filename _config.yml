@@ -10,7 +10,7 @@ bio: If you want to go fast, go alone. If you want to go far, go together
 external-image: false
 picture: assets/images/profile.jpg
 
-url: https://www.matviichuk.com
+url: http://127.0.0.1:4000
 # your url: http://USERNAME.github.io
 
 #permalink: /:title/
