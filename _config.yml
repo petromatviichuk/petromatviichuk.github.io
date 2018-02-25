@@ -11,7 +11,7 @@ external-image: false
 picture: assets/images/profile.jpg
 
 url: https://www.matviichuk.com
-# your url: http://USERNAME.github.io
+#url: http://127.0.0.1:4000
 
 #permalink: /:title/
 permalink: /:year/:month/:day/:title

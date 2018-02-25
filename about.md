@@ -7,7 +7,7 @@ Hi,
 
 My name is Petro Matviichuk. I’m a [Lviv](https://www.lonelyplanet.com/ukraine/western-ukraine/lviv)-based sysadmin/devops.
 
-Currently, I'm working as an IT Administrator at [Echovox SA](http://www.echovox.com).
+Currently, I'm working as DevOps Engineer at Intellias.
 
 In this blog I write notes about daily work challenges and investigations.
 
