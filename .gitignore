@@ -2,7 +2,7 @@
 .htaccess
 .DS_Store
 .sass-cache
-.vscode/
 Gemfile.lock
 _site/
 _drafts/
+.vscode/
